@@ -1,0 +1,18 @@
+.responsive-box {
+  width: 600px;
+  height: 115px;
+  border-radius: 100px;
+  position: relative;
+  margin: 0 auto; /* 中央揃え */
+}
+
+@media (max-width: 768px) {
+  .responsive-box {
+    width: 90%;
+    max-width: 768px;
+    height: 90px;
+    border-radius: 100px;
+    left: 50%; /* 中央配置のための調整 */
+    transform: translateX(-50%); /* 中央配置の微調整 */
+  }
+}
